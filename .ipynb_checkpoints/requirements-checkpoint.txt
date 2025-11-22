@@ -1,0 +1,21 @@
+# Core Python version
+python>=3.8
+
+# Machine Learning
+tensorflow
+scikit-learn
+
+# Data Handling
+numpy
+pandas
+
+# Visualization
+matplotlib
+seaborn
+
+# Images
+pillow
+opencv-python
+
+# Notebook Support
+jupyter

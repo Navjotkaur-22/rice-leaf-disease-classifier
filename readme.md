@@ -126,17 +126,26 @@ Early Stopping	Enabled
 
 (Update with your exact notebook metrics if needed)
 
-👩‍💻 Author & Links
+## 👩‍💻 Author & Links
 
-Developed by Navjot Kaur
+**Developed by Navjot Kaur**  
+💼 *Certified Data Scientist | ML, DL & BI Projects | Streamlit Developer*
 
-💼 Certified Data Scientist | ML, DL & BI Projects | Streamlit Developer
+<p align="left">
+  <a href="https://rice-leaf-disease-classifier-fiiamasjb8gsanuahw48rc.streamlit.app/" target="_blank">
+    <img src="https://img.shields.io/badge/Streamlit_App-Open-green?style=for-the-badge&logo=streamlit" />
+  </a>
+  <a href="https://github.com/Navjotkaur-22/rice-leaf-disease-classifier" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub_Repository-Open-blue?style=for-the-badge&logo=github" />
+  </a>
+  <a href="https://www.upwork.com/freelancers/~01b30aa09d478b524c" target="_blank">
+    <img src="https://img.shields.io/badge/Upwork_Profile-View-success?style=for-the-badge&logo=upwork" />
+  </a>
+</p>
 
-<p align="left"> <a href="https://rice-leaf-disease-classifier-fiiamasjb8gsanuahw48rc.streamlit.app/" target="_blank"> <img src="https://img.shields.io/badge/Streamlit_App-Open-green?style=for-the-badge&logo=streamlit" /> </a> <a href="https://github.com/Navjotkaur-22/rice-leaf-disease-classifier" target="_blank"> <img src="https://img.shields.io/badge/GitHub_Repository-Open-blue?style=for-the-badge&logo=github" /> </a> <a href="https://www.upwork.com/freelancers/~01b30aa09d478b524c" target="_blank"> <img src="https://img.shields.io/badge/Upwork_Profile-View-success?style=for-the-badge&logo=upwork" /> </a> </p>
-📬 Contact
+## 📬 Contact  
+📧 Email: **nkaur4047@gmail.com**  
+🌍 Punjab, India  
 
-📧 Email: nkaur4047@gmail.com
+**© 2025 Navjot Kaur — All Rights Reserved**
 
-🌍 Punjab, India
-
-© 2025 Navjot Kaur — All Rights Reserved

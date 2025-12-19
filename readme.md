@@ -12,49 +12,36 @@ The model is fully deployed using **Streamlit Cloud** and supports real-time inf
 ---
 
 ## ✨ Features
-- 🌿 **Single Image Prediction** — upload any rice leaf image  
-- 🧠 **Trained CNN Model** — MobileNetV2-based transfer learning  
-- 📸 **Image Preprocessing Pipeline** — 224×224 resizing + normalization  
-- 📊 **Prediction Confidence Display**  
-- 🗂 **3-Class Disease Classification**  
-- ☁️ **Streamlit Cloud Deployment**  
-- 🔗 **Git LFS support** for large model (.h5)
+- 🌿 **Single Image Prediction**  
+- 🧠 **MobileNetV2 Transfer Learning Model**  
+- 📸 **224×224 Preprocessing + Normalization**  
+- 📊 **Confidence Score Display**  
+- 🗂 **3-Class Rice Disease Classification**  
+- ☁️ **Live on Streamlit Cloud**  
+- 🔗 **Git LFS for model.h5**
 
 ---
 
 ## 📊 Dataset Overview
-
-- **Dataset Source:** Rice Leaf Disease Dataset  
 - **Classes:**  
-  - *Bacterial Blight*  
-  - *Brown Spot*  
-  - *Leaf Smut*  
+  - Bacterial Blight  
+  - Brown Spot  
+  - Leaf Smut  
 
-- **Training Artifacts:**
-  - Augmented images (rotations, flips)
-  - 224×224 image resizing
-  - Normalization (1/255)
-
-Dataset was analyzed using EDA grids to inspect color, lesion patterns, and class distribution.
+- **Training Preprocessing:**  
+  - Image Augmentation  
+  - 224×224 resizing  
+  - Normalization (/255.0)
 
 ---
 
 ## 🤖 Model Overview
-
-- **Architecture:** Transfer Learning (MobileNetV2) + Custom CNN layers  
-- **Input Size:** `224 × 224 × 3`  
-- **Preprocessing:**  
-  - `img = img / 255.0`  
-  - Expand dims → model-ready tensor  
+- **Architecture:** MobileNetV2 + Custom Dense Layers  
+- **Input Size:** 224×224×3  
 - **Loss:** Categorical Crossentropy  
 - **Optimizer:** Adam  
-- **Final Softmax Classes:**  
-  `Bacterial Blight`, `Brown Spot`, `Leaf Smut`
-
-- **Model Artifact:** `rice_leaf_best_model.h5` (Tracked using Git LFS)  
-- **Label Mapping:** Stored in `label_map.json` directly generated from training notebook
-
-All configurations match the original notebook exactly.
+- **Artifact:** `rice_leaf_best_model.h5` (LFS)  
+- **Labels:** `label_map.json`
 
 ---
 
@@ -62,28 +49,29 @@ All configurations match the original notebook exactly.
 
 | Upload Image | Prediction Output | Confidence Score |
 |--------------|------------------|------------------|
-| ![Upload](https://via.placeholder.com/250x150?text=Upload+UI) | ![Result](https://via.placeholder.com/250x150?text=Prediction+Card) | ![Confidence](https://via.placeholder.com/250x150?text=Confidence+Meter) |
-
-*(Replace placeholders with your actual screenshots if you want)*
+| ![](https://via.placeholder.com/250x150?text=Upload+UI) | ![](https://via.placeholder.com/250x150?text=Prediction+Card) | ![](https://via.placeholder.com/250x150?text=Confidence+Meter) |
 
 ---
 
 ## 🚀 Quick Start (Local Setup)
 
-```bash
+~~~bash
 # 1️⃣ Create environment
 python -m venv .venv
-. .venv/bin/activate  # Windows: .venv\Scripts\activate
+. .venv/bin/activate    # Windows: .venv\Scripts\activate
 
 # 2️⃣ Install dependencies
 pip install -r requirements.txt
-# Or manually:
-pip install streamlit tensorflow-cpu pillow numpy h5py
 
-# 3️⃣ Run the app locally
+# 3️⃣ Run
 streamlit run app.py
+~~~
 
-🗂 Project Structure
+---
+
+## 🗂 Project Structure
+
+~~~text
 .
 ├── app.py
 ├── rice_leaf_best_model.h5
@@ -92,39 +80,43 @@ streamlit run app.py
 ├── requirements.txt
 ├── riceleafdataset/
 └── README.md
+~~~
 
-🛠 Tech Stack
-Category	Tools
-Language	Python 3
-Deep Learning	TensorFlow / Keras (MobileNetV2)
-Data Handling	NumPy, PIL
-UI	Streamlit
-Deployment	Streamlit Cloud
-Versioning	GitHub + Git LFS
-🔍 How Prediction Works
+---
 
-User uploads leaf image
+## 🛠 Tech Stack
 
-Image resized to 224×224
+| Category | Tools |
+|----------|--------|
+| Language | Python 3 |
+| Deep Learning | TensorFlow / Keras |
+| UI | Streamlit |
+| Handling | NumPy, PIL |
+| Deployment | Streamlit Cloud |
+| Storage | Git LFS |
 
-Normalized (/255.0)
+---
 
-Model predicts softmax probabilities
+## 🔍 How Prediction Works
+1. User uploads image  
+2. Resize → 224×224  
+3. Normalize → /255  
+4. Predict via MobileNetV2  
+5. Softmax scores generated  
+6. Highest probability picked  
+7. Display disease + confidence  
 
-Highest probability selected
+---
 
-Class label fetched from label_map.json
+## 📈 Model Performance  
+| Metric | Score |
+|--------|--------|
+| Training Accuracy | ~97% |
+| Validation Accuracy | ~94% |
+| Loss | Stable |
+| Early Stopping | Enabled |
 
-Output shown with confidence
-
-📈 Model Performance
-Metric	Score
-Training Accuracy	~97%
-Validation Accuracy	~94%
-Loss	Stable convergence
-Early Stopping	Enabled
-
-(Update with your exact notebook metrics if needed)
+---
 
 ## ✨ Author  
 
@@ -137,7 +129,8 @@ MSc (IT) | Certified Data Scientist | Streamlit Developer
 <a href="https://github.com/Navjotkaur-22" target="_blank"><img src="https://img.shields.io/badge/GitHub-Navjotkaur--22-black?logo=github&style=for-the-badge"/></a>
 <a href="https://www.linkedin.com/in/navjot-kaur-b61aab299/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-Navjot_Kaur-blue?logo=linkedin&style=for-the-badge"/></a>
 <a href="https://www.upwork.com/freelancers/~01b30aa09d478b524c" target="_blank"><img src="https://img.shields.io/badge/Upwork-Hire_Me-brightgreen?logo=upwork&style=for-the-badge"/></a>
-</p>  
+</p>
+
+---
 
 **© 2025 Navjot Kaur — All Rights Reserved**
-

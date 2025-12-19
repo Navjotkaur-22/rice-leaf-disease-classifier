@@ -45,14 +45,6 @@ The model is fully deployed using **Streamlit Cloud** and supports real-time inf
 
 ---
 
-## 🖥 Preview
-
-| Upload Image | Prediction Output | Confidence Score |
-|--------------|------------------|------------------|
-| ![](https://via.placeholder.com/250x150?text=Upload+UI) | ![](https://via.placeholder.com/250x150?text=Prediction+Card) | ![](https://via.placeholder.com/250x150?text=Confidence+Meter) |
-
----
-
 ## 🚀 Quick Start (Local Setup)
 
 ~~~bash

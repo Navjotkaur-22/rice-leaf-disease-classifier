@@ -7,7 +7,7 @@ The model is fully deployed using **Streamlit Cloud** and supports real-time inf
 
 ---
 
-[![🚀 Launch App](https://img.shields.io/badge/Launch_Streamlit_App-Click_Here-brightgreen?style=for-the-badge&logo=streamlit)](YOUR_STREAMLIT_APP_LINK_HERE)
+[![🚀 Launch App](https://img.shields.io/badge/Launch_Streamlit_App-Click_Here-brightgreen?style=for-the-badge&logo=streamlit)](https://rice-leaf-disease-classifier-fiiamasjb8gsanuahw48rc.streamlit.app/)
 
 ---
 
